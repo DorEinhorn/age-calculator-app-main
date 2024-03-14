@@ -113,3 +113,36 @@ font-size: 20px;
     color: var(--Purple);
     letter-spacing: 0.5rem;
 }
+
+@media only screen and (max-width: 375px) {
+    .selection {
+      margin-bottom: 40px;
+    }
+    input {
+      font-size: 18px;
+      width: 80px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    .up-content {
+      background: var(--White);
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      border-bottom-right-radius: 30%;
+      position: relative;
+    }
+    .down-text h1 {
+      font-size: 45px;
+      font-style: italic;
+    }
+    p.error {
+      font-size: 10px;
+    }
+    button {
+      right: 40%;
+    }
+    .down-text {
+      margin-top: 40px;
+    }
+  } 
