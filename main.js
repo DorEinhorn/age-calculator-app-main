@@ -97,7 +97,7 @@ const validateDay = () => {
   
   // Validate Day
   function validDay(y, m, d) {
-    if (d > getNoOfDays(y, m) || d < 1) return false;
+    if (d > getNoOfDats(y, m) || d < 1) return false;
     return true;
   }
   
