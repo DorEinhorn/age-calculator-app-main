@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    background-color: var(--Light-grey);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--White);
+    border-radius: 2rem;
+    border-bottom-right-radius: 10rem;
+    padding: 3rem;
+    min-width: 35%;
+    
+}
+
+.up-content{
+    display: flex;
+    border-bottom: 2px solid var(--Off-white);
+    position: relative;
+    gap: 60px;
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.selection input{
+    width: 100px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid var(--Light-grey);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.selection label{
+    color: var(--Smokey-grey);
+    letter-spacing: 0.3rem;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.selection input::placeholder{
+text-transform: uppercase;
+font-weight: bold;
+font-size: 20px;
+}
+
+#CalcBtn{
+    background: var(--Purple);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 1rem;
+    position: absolute;
+    bottom: -35px;
+    right: 0%;
+    cursor: pointer;
+}
+#CalcBtn:hover {
+    background: var(--Off-black);
+  }
+
+  input:focus {
+    border: 0.5px solid var(--Purple);
+  }
+
+  p.error {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Light-red);
+    font-style: italic;
+    margin: 5px 0;
+  }
+
+.down-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.down-text{
+    margin: 2rem 0;
+    font-size: 3.8rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.down-text .dynamic-content{
+    color: var(--Purple);
+    letter-spacing: 0.5rem;
+}
