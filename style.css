@@ -114,17 +114,26 @@ font-size: 20px;
     letter-spacing: 0.5rem;
 }
 
-@media only screen and (max-width: 375px) {
+@media (max-width: 768px) {
+    .up-content{
+        gap: unset;
+    }
+
+    .selection input::placeholder{
+        font-size: 15px;
+        }
+
     .selection {
       margin-bottom: 40px;
     }
-    input {
+    .selection input {
       font-size: 18px;
       width: 80px;
       margin-right: 10px;
       border-radius: 5px;
     }
-    .up-content {
+    .container {
+    min-width: unset;
       background: var(--White);
       width: 300px;
       padding: 20px;
@@ -132,9 +141,8 @@ font-size: 20px;
       border-bottom-right-radius: 30%;
       position: relative;
     }
-    .down-text h1 {
-      font-size: 45px;
-      font-style: italic;
+    .down-text{
+      font-size: 40px;
     }
     p.error {
       font-size: 10px;
